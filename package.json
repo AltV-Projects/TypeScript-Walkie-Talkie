@@ -1,0 +1,36 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "0.0.1",
+  "description": "A basic boilerplate to get started using typescript with alt:V",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig-server.json && tsc -p tsconfig-client.json",
+    "build:server:watch": "tsc -w -p tsconfig-server.json",
+    "build:client:watch": "tsc -w -p tsconfig-client.json",
+    "copy:meta": "cd ./src && copyfiles resource.cfg ../resources/walkietalkie/  && copyfiles ./client/**/*.html ./client/**/*.js ./client/**/*.css ./client/**/*.mp3 ../resources/walkietalkie/",
+    "copy:run": "npm run copy:meta && altv-server.exe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AltV-Projects/TypeScript-Boilerplate.git"
+  },
+  "keywords": [
+    "typescript",
+    "alt:v",
+    "alt:V Multiplayer",
+    "gta5"
+  ],
+  "author": "Mario Franze <mfranze@codingden.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AltV-Projects/TypeScript-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/AltV-Projects/TypeScript-Boilerplate#readme",
+  "devDependencies": {
+    "@altv/native-types": "^1.0.3",
+    "@altv/types": "^1.0.19",
+    "@types/node": "^13.13.2",
+    "copyfiles": "^2.2.0",
+    "typescript": "^3.8.3"
+  }
+}

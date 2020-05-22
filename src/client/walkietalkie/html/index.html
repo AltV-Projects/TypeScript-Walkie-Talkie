@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Walkie Talkie</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+</head>
+
+<body>
+	<div id="app" v-if="shown">
+		<div id="radio">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 548 1755"
+				width="150">
+				<defs>
+					<clipPath id="ab0838de-71a8-4ada-90d8-3513256e4329">
+						<path
+							d="M329,618H219q-2.83,11.07,2.36,16.49A11.94,11.94,0,0,0,230,638H318a11.94,11.94,0,0,0,8.67-3.51Q331.83,629.08,329,618Z"
+							fill="none" />
+					</clipPath>
+					<filter id="f3164022-6baa-4c94-9279-9fd7419a91bb" filterUnits="userSpaceOnUse"
+						color-interpolation-filters="sRGB">
+						<feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" />
+					</filter>
+					<mask id="ab8ad74c-7d21-49a8-9a95-5c36e7e3a0ca" x="112" y="1328" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(112 1328)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<image id="b5437f71-1af8-4d38-81da-51903d5876e9" width="22" height="22"
+						xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsSAAALEgHS3X78AAACd0lEQVQ4T7WVPW+rShCGHxBfixWCKAhVbFOk8P//LelM6AIFMrEMuxFftzjaPeYS60j36oy0omB4ZhjeebGAhb8Q9p8S/ms4j25kWUYcxwghcBwH2/7VwzzPjOOIlJLL5UJd1z8+/yP4eDyS5zlpmhJFEb7v4zgOy7IwTRNSSm63G3VdI4SgLMsNYwPO85zT6cThcDBdB0GA67osy2K6bduWJEkQQmDbNkVRPAYfj0dOpxNvb2/s9/vVOO7BXdfRti1PT094ngf8GtF95wacZRl5nnM4HNjv97y+vpKmKXEcE4ahAQ/DQN/3K+gwDCilUEpRVdUaHMcxaZqSZRlZlpGmKS8vL0RRZEahIVLKFfR2u9E0DZ+fn1uwEIIoiojj2JwoioiiCM/zsCwLAN/3cV0Xy7IYhoGu64jjmOfnZ4Ig0LjfYMdx8H2fIAgQQhCGIUEQrKAAlmXh+z7jOBKGIbvdzuQ6zu9PZhbEtm0cx8F13dW5h97DXdfF8zxzvdf6CgywLMvq/Cl+KqrDgOd5ZpomxnFkHEeGYWAYhocF9Abq3GmaVrkGrIUvpaTrOvq+R0rJ9/f3Bq6VoXOklCilGIbB5Jhp6zVt23YlfsuyGMfRyG2eZ6SUfH190bYtl8uFtm25Xq8opbZgbShJkmzEH4bhqkjf97RtS13X1HVNVVXUdU3TNFuwNhQhxAradR273c50/G9nK8uSoig4n88rp1t5RVmWRjJ6o/RK3xfTJlRVFUVR8P7+zsfHxz1q625FUTDPM0opmqYxG6XFP00TSimu1yt1XXM+nzdQAIsHv6Ysy0iSxED1m2gj0oUfGf1D8P+Nv/bP+wdRfYtUhpT24QAAAABJRU5ErkJggg==" />
+					<mask id="baf08f84-3fe5-4e7e-8b96-47843c89257b" x="112" y="1361" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(112 1361)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b89dcc69-bd00-4da4-ac0a-cf19823583cc" x="96" y="1377" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(96 1377)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="adaec1b5-b176-422f-89e6-308b57f358cb" x="130" y="1345" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(130 1345)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fe3128a0-82fa-4971-ad0d-0074bec54129" x="181" y="1328" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(181 1328)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b5ab1fee-609b-481c-89c8-d26478933135" x="164" y="1345" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(164 1345)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a0c66c72-9372-45c1-9731-2fe578b55aa2" x="199" y="1345" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(199 1345)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="afd37426-75f4-45fb-bc90-018fa5ca3764" x="147" y="1361" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(147 1361)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fdd62b21-df32-4df5-84f7-a3ec477a10a8" x="130" y="1377" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(130 1377)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b72c5f8a-8e5c-45b3-b09d-5dfac8819794" x="96" y="1409" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(96 1409)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b1b13973-879f-4678-bcbe-5e6230b43b71" x="96" y="1441" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(96 1441)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f74634ab-cddf-43f6-9351-b71e5a8130d9" x="96" y="1475" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(96 1475)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ebe0423a-ae4c-4285-af3d-9b20d31892c2" x="96" y="1507" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(96 1507)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a6eebdc6-ab7a-41fd-bd0c-a1b126ef3703" x="96" y="1538" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(96 1538)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f7a9e41f-c34c-42a2-9b7d-de88f2adee91" x="96" y="1570" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(96 1570)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a43486fa-9c73-4b90-8fca-ecb67e406f0e" x="113" y="1426" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(113 1426)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ae065b4e-66fe-4098-aea2-7297c0f7850f" x="113" y="1458" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(113 1458)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ed076347-ab29-468b-ab35-e654a6a6237f" x="113" y="1490" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(113 1490)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b7ec9c58-5035-49c4-aba8-5e984e381e11" x="113" y="1523" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(113 1523)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b5b72901-cbe6-44a8-9789-ed3c08b6cfdb" x="113" y="1555" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(113 1555)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a41c3075-a48e-4b8c-b03d-93e83c0d769a" x="114" y="1587" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(114 1587)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bf583dcb-c737-430d-aa19-1a0cb075773a" x="96" y="1603" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(96 1603)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bdcc3553-8952-4c5e-be4d-26fac0abcc0a" x="131" y="1607" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(131 1607)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a39440c4-b0d6-4b3a-b7d6-82785c3fd7ae" x="441" y="1603" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1603)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e954d0bd-b71b-4741-a9e2-b229a7aa6ad7" x="423" y="1583" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1583)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b27bb7d6-d8a6-4795-b15b-a150a347ecde" x="441" y="1567" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1567)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b517acd8-3eed-492d-8bce-926fa269d52a" x="423" y="1552" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1552)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="aec4af52-1107-4330-aae6-c69651c47c59" x="441" y="1537" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1537)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="effc406a-bea2-4cd5-b1c1-7f5620f8f6de" x="423" y="1519" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1519)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e02d708f-d0e1-4823-9025-438f57f93c9f" x="441" y="1501" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1501)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e9d0ed2b-9576-420a-a590-8157d16d28fd" x="423" y="1486" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1486)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b809ef36-1c69-4ecc-a1e5-e2c8fac7c38e" x="405" y="1472" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(405 1472)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e47be77b-89dd-4fe7-9ec0-26e91767b297" x="390" y="1457" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(390 1457)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f7f24179-62f2-498f-9409-5594aa090971" x="423" y="1457" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1457)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bdc86965-40ed-4cb5-9391-ea759e018a50" x="441" y="1472" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1472)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b34f0658-2af6-4d1a-b171-d9f7fb42f8ce" x="441" y="1441" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1441)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a47a00c5-b35c-4cd7-b741-62e3e7dd3207" x="423" y="1423" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1423)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fc4a5b25-a82e-4152-905d-76acbaf5ce44" x="408" y="1408" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(408 1408)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e8660b47-5693-400d-b2e3-bfbb1b469f8f" x="423" y="1327" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1327)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a77b55fb-147e-4548-ae5c-e6950830b401" x="441" y="1343" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1343)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e7cb0be0-eb1c-433d-bc58-db0f5e9c85e3" x="423" y="1361" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1361)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e510b1d4-b017-474b-8b74-080cb39ecea8" x="441" y="1375" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1375)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a4325704-c7cd-42f2-a182-f69d245123df" x="423" y="1392" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(423 1392)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b78a6124-22e3-473b-9054-180e945c41b1" x="372" y="1408" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(372 1408)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b79c04cd-458e-460e-b440-4625cd1a47b6" x="390" y="1393" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(390 1393)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a196e2a9-0bc0-4ef7-92d5-b14c09b73dcd" x="372" y="1377" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(372 1377)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e0b1c679-c320-4b88-8b7a-d33d85549906" x="354" y="1393" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(354 1393)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="adaeb78d-d774-4260-befc-de376b4576af" x="354" y="1361" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(354 1361)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b11f3004-55c3-465e-8f50-2430812cfa11" x="354" y="1329" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(354 1329)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fe00865b-c983-49e5-a5f2-ddcc25e3ea77" x="372" y="1345" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(372 1345)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b73aaf01-687d-46f1-8f79-21f7b1691f56" x="389" y="1361" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(389 1361)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e4f4ff3a-3f0a-4616-b7e0-f1a9d236f1e3" x="336" y="1345" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(336 1345)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a39c4674-1e31-408c-b0b3-e8aa32198e76" x="320" y="1361" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(320 1361)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b3cf62d7-28fa-4ca0-b948-9fa7f5350be0" x="285" y="1329" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(285 1329)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ef56aa93-7b10-4ee7-ae38-82fbf86acf97" x="267" y="1345" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(267 1345)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="be26a12d-9c7e-4cf6-ad58-2dc400465044" x="285" y="1361" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(285 1361)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f21647a8-738c-4d8d-b707-5432d433f5f6" x="233" y="1345" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(233 1345)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e30ffbb5-ccc3-408d-a16a-1071300229d5" x="215" y="1361" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(215 1361)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fcd89ed0-d1ad-4dc9-b03c-0947aa67af72" x="198" y="1377" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(198 1377)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b2e04228-d228-418a-b8bb-61c70fa26f82" x="181" y="1393" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(181 1393)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b1f67457-6a36-4390-9dc6-97c596256f04" x="164" y="1377" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(164 1377)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f3a3433e-12bb-41ec-b48b-1f4df5b96470" x="147" y="1395" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(147 1395)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="eed85f9f-60ea-4e58-a76d-0c895d6482e0" x="267" y="1377" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(267 1377)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ad00d123-f0d7-4669-bcca-f6c22e920f2a" x="233" y="1377" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(233 1377)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e452601f-8f60-4a8a-92e7-52f4ea5fb335" x="389" y="1425" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(389 1425)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ea788ec0-2755-499f-9dfc-7e5034f3fefd" x="285" y="1490" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(285 1490)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b36da48f-d850-499a-a7d8-8da51b0aeb97" x="285" y="1522" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(285 1522)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f0428373-73cf-44c7-8d7a-1ca6a8b2333f" x="285" y="1554" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(285 1554)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a171bf6d-b7fd-400c-b89b-d7f6f4d6ebfb" x="285" y="1594" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(285 1594)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ec3d09b1-2b33-492c-9dce-adb0b540117e" x="303" y="1612" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(303 1612)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ae4aa6de-a891-47ab-a671-b811997b6171" x="303" y="1574" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(303 1574)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ab9f4ac2-81ea-4828-b169-66d61b65eb87" x="303" y="1536" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(303 1536)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f36db154-ecad-4226-a243-ab832cd18845" x="303" y="1504" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(303 1504)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b2096f63-be89-47dd-9de9-52f858c42fe2" x="303" y="1472" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(303 1472)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e7db0103-1c15-483a-9084-e5dc2b7ee7af" x="285" y="1457" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(285 1457)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b6083c2a-ecde-4409-9bd9-aa24c27bd4b6" x="303" y="1440" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(303 1440)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b04e36a1-5841-47b7-b346-5768b962eb14" x="285" y="1392" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(285 1392)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a8993035-f3a8-45ce-b84b-cd982d1bd9b4" x="302" y="1377" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(302 1377)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e6cfcd18-3600-4e3d-8ed5-26c71cf4fae4" x="302" y="1408" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(302 1408)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f7150c92-59bd-4eb4-bdec-9b1770701712" x="320" y="1392" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(320 1392)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b241fd61-663a-4b0c-a52f-a99db747a464" x="321" y="1425" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(321 1425)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bf982e5a-2b4d-438f-88f0-dac51dd09c3f" x="339" y="1408" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(339 1408)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ed193934-f7a8-499f-b926-0f7ae256b37f" x="337" y="1440" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(337 1440)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a84acf41-1319-4bff-b722-ab0417d2ba51" x="319" y="1456" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(319 1456)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fb45ced7-e445-460b-8ee6-73ca03f75581" x="441" y="1407" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(441 1407)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fe63ebb7-46dc-406b-901e-ab1469998f94" x="355" y="1423" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(355 1423)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a176091c-108b-42c5-89f5-8f9e21f66f76" x="354" y="1456" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(354 1456)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e18625a0-68c7-44e3-a603-0fa2313ca325" x="337" y="1472" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(337 1472)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="eefc2cfe-592f-40a2-9edf-575a07ba3844" x="319" y="1488" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(319 1488)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ad03511d-99e5-4037-95fb-1adf0f880d51" x="321" y="1520" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(321 1520)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a60cbe03-aa87-41c9-adb8-ec5f2c9dae52" x="339" y="1504" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(339 1504)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bb3350be-c497-4d22-bd79-9b6c296ee669" x="354" y="1488" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(354 1488)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a760b3a2-a616-4d9e-ad43-198af5cb0950" x="372" y="1472" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(372 1472)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b13663fd-30e1-45b1-b41b-7c906be6f6df" x="370" y="1440" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(370 1440)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bab7d087-0041-4eb7-b418-09776944514a" x="389" y="1486" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(389 1486)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="badd9476-fee1-4fe0-bb6c-70240bc722a5" x="372" y="1504" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(372 1504)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f7805643-cbbc-42c5-9f79-336d92dae72f" x="354" y="1519" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(354 1519)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ed94fb30-997c-4ec5-bf45-bb0a6627faf9" x="337" y="1536" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(337 1536)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b75199f5-993d-4891-ae14-4a3a9e846c89" x="320" y="1555" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(320 1555)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ba05697c-23a7-4006-8e50-e0d671fbd8da" x="319" y="1593" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(319 1593)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e43fc65c-96ed-4c3d-8f5b-a0c227420fcb" x="337" y="1574" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(337 1574)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fb61970b-228f-4c07-a59d-785160f4d630" x="354" y="1554" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(354 1554)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e799c615-00e6-4272-b7cd-3a51fe56357a" x="355" y="1591" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(355 1591)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ea60767d-641a-471f-b6f3-56bcffc19129" x="336" y="1611" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(336 1611)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ea608927-50ce-46c7-b92c-140442f09f89" x="372" y="1609" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(372 1609)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ada8d2f5-3099-49cf-be67-d36bf9f632ff" x="372" y="1574" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(372 1574)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="fe5aeef1-2294-4d88-958f-2cf13a971381" x="389" y="1552" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(389 1552)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bd39b7f7-b6f5-4064-996e-f06f91cb9cc7" x="389" y="1587" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(389 1587)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e6923eaf-97fe-4520-bfa1-8be35339cff3" x="408" y="1534" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(408 1534)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a1a9faff-57f3-4bbc-ae83-557d1c70a2c0" x="405" y="1605" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(405 1605)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a8954ecc-73e1-4b48-8cdd-be0d2df51c47" x="268" y="1614" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(268 1614)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e204f749-78f7-40e7-b31f-11e03f23e88d" x="233" y="1614" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(233 1614)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a63e6491-4015-41c6-94c0-9437a80bfb1f" x="199" y="1612" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(199 1612)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b978bfed-05b0-4765-9f22-022cfa931fb1" x="163" y="1611" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(163 1611)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bd0e6a8c-8df7-4087-b564-f4528ecbf2a4" x="181" y="1594" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(181 1594)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a7694689-e325-49d0-a9df-d129fdccdc10" x="199" y="1576" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(199 1576)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a1d774e5-2bca-4548-9a01-9b2fecd8956d" x="217" y="1595" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(217 1595)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b9170ce6-6ec5-411d-abec-fae3b89e4765" x="233" y="1576" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(233 1576)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f01921cb-f3fc-4e48-82be-69065aec3005" x="251" y="1593" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(251 1593)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e706d1b5-b1e4-47a1-b912-f1e8c60e24ac" x="268" y="1576" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(268 1576)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b21a208d-16e7-4787-ba4e-11920b095291" x="251" y="1556" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(251 1556)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="aeafcdb7-f931-4a4e-b9d0-8555163c3d8d" x="216" y="1555" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(216 1555)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b1b5b7e9-529a-4051-a2c1-69a2e6aa0595" x="181" y="1556" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(181 1556)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="be2c5577-1867-4ca1-b809-f3819b969915" x="164" y="1574" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(164 1574)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f7398693-0f66-4645-951e-f34da9a156eb" x="147" y="1591" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(147 1591)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bdbfe027-6f96-457e-b422-b4b6bf1c01f0" x="129" y="1573" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(129 1573)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a9f7c985-eef7-425d-87e6-e70e47d9118b" x="149" y="1556" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(149 1556)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ba0b3498-41c1-49b4-8346-86b0ab650309" x="129" y="1537" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(129 1537)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b6626fc7-7f81-4b14-b541-7cb9e10cdea3" x="164" y="1537" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(164 1537)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ae2c217a-d70a-44f5-bb1f-3f30defe1105" x="199" y="1536" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(199 1536)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f431313a-200f-4c62-b662-bc9d4edc49cd" x="233" y="1537" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(233 1537)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bd97d193-a74c-447f-bfa8-b6bded3526b2" x="268" y="1537" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(268 1537)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a5a5443c-9129-4584-a98d-81cdf2d29e98" x="251" y="1522" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(251 1522)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b6d50be0-fdd3-4302-8aed-ddd4d18663eb" x="233" y="1505" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(233 1505)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b21f6274-a19e-49c2-8ca3-051986183873" x="217" y="1522" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(217 1522)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e1ddd805-4ed0-428a-a58e-dc92eebe69b2" x="182" y="1522" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(182 1522)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e7f51d47-39ac-4922-b942-8cfbe1a440c1" x="147" y="1522" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(147 1522)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e5bb7d59-207f-4c7d-8c24-7affb9fd7e77" x="129" y="1505" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(129 1505)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ac5f92a3-97b7-4d10-a50a-ba56d6082040" x="129" y="1472" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(129 1472)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b3fd0c64-9963-4643-9df0-7b4ea3d9d59f" x="147" y="1490" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(147 1490)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b70111ce-95b7-48ed-b131-c99a60de88d5" x="164" y="1474" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(164 1474)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a21b7cbe-6fca-4d14-a76d-693115af2686" x="182" y="1490" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(182 1490)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f399064f-26e1-427e-bca4-35f13c2458c5" x="163" y="1506" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(163 1506)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bbbb0b5f-fd36-49c3-b17c-9113fb23c931" x="199" y="1505" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(199 1505)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ed3eea4b-7932-498f-933d-6b15d669d924" x="216" y="1489" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(216 1489)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bb08432b-f435-49b1-a3c9-fb6880f9fc14" x="252" y="1488" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(252 1488)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ec3ab7d6-3fc3-4ff3-ba37-da1a48650a81" x="268" y="1505" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(268 1505)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f42c855b-500c-4027-ad9e-cf7f364a8638" x="268" y="1474" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(268 1474)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b826eaf8-05f4-4dd1-bc91-6ffd99ea6d02" x="252" y="1457" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(252 1457)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f3be0f55-1a53-474e-8a52-61f2e91519b5" x="270" y="1441" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(270 1441)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b335baa9-2407-4f6d-b868-ce485b14c946" x="270" y="1409" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(270 1409)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ab7e7898-f54e-4a11-92db-116e394f9740" x="251" y="1393" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(251 1393)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a080dfa3-f968-42ee-990c-ce7c24bca518" x="233" y="1409" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(233 1409)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e6a0b6ab-4af8-40a8-a0b9-f3558f3bc6e6" x="252" y="1425" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(252 1425)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="beadd4ca-c809-4182-b960-a46a89b52604" x="233" y="1440" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(233 1440)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a0ae38e6-e674-43d6-936b-4b8c8fb655c9" x="234" y="1473" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(234 1473)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="acdef715-eda5-4402-b2d7-ba65e59cacdc" x="217" y="1456" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(217 1456)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a6abacda-61bf-447c-beff-2f95f43e448d" x="199" y="1473" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(199 1473)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a391d083-e606-4b3c-aeb4-03500145a581" x="182" y="1456" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(182 1456)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="ac135790-f6af-460c-aab5-455bc393a314" x="164" y="1442" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(164 1442)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b50bb833-6cbe-4473-8b4e-b9287ad6fe3c" x="147" y="1426" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(147 1426)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="be7c81b9-4c60-48c3-8fb6-c42a0cdf5ee7" x="129" y="1409" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(129 1409)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="f7ff7546-c573-4558-901f-4e2370adffdb" x="130" y="1442" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(130 1442)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b8d7e744-b2ca-41cc-810e-5a5bcd37748b" x="165" y="1411" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(165 1411)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e1faff7d-5065-4372-9a12-c9801c2101f9" x="182" y="1425" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(182 1425)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b4a802f2-3101-4549-a804-e7ef001b6548" x="199" y="1411" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(199 1411)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a40dc28a-f583-4f13-bde8-ffb203791d52" x="217" y="1426" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(217 1426)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="bfe324cb-3a18-4d24-a0c8-4e1b1933aeac" x="199" y="1442" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(199 1442)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="a1c56a72-cdd4-4748-95da-631487c39de6" x="370" y="1536" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(370 1536)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="e2148cd6-2f2d-46d2-b257-0cb87962e626" x="389" y="1519" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(389 1519)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="b91b32c0-ac37-4f2c-a78a-5cce7bc1fea5" x="405" y="1502" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(405 1502)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+					<mask id="af52b801-ba61-48bb-b668-51da0b56e24e" x="405" y="1570" width="22" height="22"
+						maskUnits="userSpaceOnUse">
+						<g filter="url(#f3164022-6baa-4c94-9279-9fd7419a91bb)">
+							<use transform="translate(405 1570)" xlink:href="#b5437f71-1af8-4d38-81da-51903d5876e9" />
+						</g>
+					</mask>
+				</defs>
+				<title></title>
+				<g id="f3f2d7b2-d6a8-4d28-ae48-9167124223aa" data-name="Layer 2">
+					<g id="bd94f26e-3e8d-4505-8fb9-85f3a18fadc0" data-name="Base">
+						<path d="M134,590H60a4,4,0,0,1-4-4h0a4,4,0,0,1,4-4h74a4,4,0,0,1,4,4h0A4,4,0,0,1,134,590Z" fill="#4d4d4d" />
+						<path d="M176.09,601.29c-1-7.11-5.75-12.29-11.31-12.29H29.22c-5.56,0-10.33,5.18-11.31,12.29L0,731H194Z"
+							fill="#333" />
+						<path
+							d="M548,607l-10-573.85a27.51,27.51,0,0,0-1.11-7.44A36.47,36.47,0,0,0,518,3,27.49,27.49,0,0,0,505.3,0H423.64a3.73,3.73,0,0,0-3.73,3.64L405,607Z"
+							fill="#1a1a1a" />
+						<polygon points="548 736.5 548 606 405 606 405 637 548 736.5" fill="#333" />
+						<path id="a9166658-ef60-492c-aadd-4ed37a4bbda8" data-name="General_Base2"
+							d="M451,625l-108.12-5.5a1358.37,1358.37,0,0,0-137.76,0L97,625C49,627,3,662,0,731v889.87a118.14,118.14,0,0,0,26.21,74.77c40.84,50,113,59.36,221.79,59.36h52c108.82,0,181-9.33,221.79-59.36A118.14,118.14,0,0,0,548,1620.87V731C545,662,499,627,451,625Z"
+							fill="#1a1a1a" />
+						<path
+							d="M488.16,789.61C483,735.09,375.35,740,274,736.52v0h-.5v0c-101.35,3.46-209-1.43-214.16,53.09a19.53,19.53,0,0,0-.34,4.77v792.9a60.11,60.11,0,0,0,34.06,54.48l.55.25a38,38,0,0,0,6.39,2.29c47.8,12.51,110.81,14.74,173.5,17.18v0h.5v0c62.69-2.44,125.7-4.67,173.5-17.18a38,38,0,0,0,6.39-2.29l.55-.25a60.11,60.11,0,0,0,34.06-54.48V794.38A19.53,19.53,0,0,0,488.16,789.61Z"
+							fill="#333" />
+						<path
+							d="M171,573a77.75,77.75,0,0,1-10.74-36.72L158,473.9a15.58,15.58,0,0,0-.14-1.8,13,13,0,0,0-8.47-10.86,18.45,18.45,0,0,0-6.9-1.24h-91a18.45,18.45,0,0,0-6.9,1.24,13,13,0,0,0-8.47,10.86,15.58,15.58,0,0,0-.14,1.8l-2.26,62.38A77.75,77.75,0,0,1,23,573a6.81,6.81,0,0,0-1,3.66,7,7,0,0,0,6.68,6.74L97,583l68.39.4a7,7,0,0,0,6.68-6.74A6.81,6.81,0,0,0,171,573Z"
+							fill="#1a1a1a" @click="toggleDevicePower" />
+					</g>
+					<g id="be4119fc-f58f-4afb-ab39-f961a9d793d8" data-name="Symbols">
+						<rect id="a947d0fe-bfda-48c5-ad3a-f348861c632e" data-name="Minus" x="238" y="1272" width="72" height="22"
+							rx="4.83" fill="#1a1a1a" @click="lowerFrequency()" />
+						<g id="e5bf208f-9e03-4c48-85aa-26563c2e314a" data-name="Lock">
+							<rect x="127" y="1177" width="48" height="32" rx="4.46" fill="#1a1a1a" />
+							<path d="M168,1179.25c0-33.25-33.5-34.08-34,0" fill="none" stroke="#1a1a1a" stroke-miterlimit="10"
+								stroke-width="6" />
+						</g>
+						<path id="e11668c7-14d5-4f16-af12-b6dee451c13c" data-name="Plus"
+							d="M305.17,1172H287.11a2.12,2.12,0,0,1-2.11-2.11v-18.06a4.84,4.84,0,0,0-4.83-4.83H267.83a4.84,4.84,0,0,0-4.83,4.83v18.06a2.12,2.12,0,0,1-2.11,2.11H242.83a4.84,4.84,0,0,0-4.83,4.83v12.34a4.85,4.85,0,0,0,4.83,4.83h18.06a2.12,2.12,0,0,1,2.11,2.11v18.06a4.84,4.84,0,0,0,4.83,4.83h12.34a4.85,4.85,0,0,0,4.83-4.83v-18.06a2.12,2.12,0,0,1,2.11-2.11h18.06a4.84,4.84,0,0,0,4.83-4.83v-12.34A4.84,4.84,0,0,0,305.17,1172Z"
+							fill="#1a1a1a" @click="raiseFrequency()" />
+						<g id="b1f8531f-ae4e-4897-b652-013bddb9d074" data-name="Arrow">
+							<polyline points="371.56 1166.5 423 1166 371 1197 423 1197" fill="none" stroke="#1a1a1a"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="14" />
+							<polygon points="417 1183 417 1195.96 417 1210 436 1195.96 417 1183" fill="#1a1a1a" />
+						</g>
+						<g id="b4073ac7-435a-4a8e-a907-1d75c75221f9" data-name="Note">
+							<ellipse cx="390.73" cy="1297.09" rx="16.66" ry="11.32"
+								transform="translate(-789.45 632.04) rotate(-43.83)" fill="#1a1a1a" />
+							<path d="M414,1266c-4.74,0-11.85-8-12.85-13v37" fill="none" stroke="#1a1a1a" stroke-linecap="round"
+								stroke-linejoin="round" stroke-width="8" />
+						</g>
+						<g id="b79bb5ef-4860-4c02-9dd3-a711e5499352" data-name="Menu" @click="menuHandler()">
+							<rect x="157" y="1253" width="24" height="24" rx="3.17" fill="#1a1a1a" />
+							<rect x="121" y="1253" width="24" height="24" rx="3.17" fill="#1a1a1a" />
+							<rect x="121" y="1289" width="24" height="24" rx="3.17" fill="#1a1a1a" />
+							<rect x="157" y="1289" width="24" height="24" rx="3.17" fill="#1a1a1a" />
+						</g>
+					</g>
+					<g id="f73f801d-2e58-4c92-8dcb-26c38c52d915" data-name="Details">
+						<g id="a76ac336-5ccb-4277-9186-b9a59697b551" data-name="Top">
+							<g clip-path="url(#ab0838de-71a8-4ada-90d8-3513256e4329)">
+								<path id="ac7c2056-88b8-435b-ac64-345507c14b20" data-name="General_Base2"
+									d="M451,625l-108.12-5.5q-34.41-1.74-68.88-1.75t-68.88,1.75L97,625C49,627,3,662,0,731v889.87a118.14,118.14,0,0,0,26.21,74.77c40.84,50,113,59.36,221.79,59.36h52c108.82,0,181-9.33,221.79-59.36A118.14,118.14,0,0,0,548,1620.87V731C545,662,499,627,451,625Z"
+									fill="#333" />
+							</g>
+						</g>
+						<g id="f3879378-587b-46b2-b91f-5051e34e767e" data-name="Screw">
+							<circle cx="470" cy="710" r="21" fill="#333" />
+							<circle cx="470" cy="710" r="16.94" fill="#1a1a1a" />
+						</g>
+						<g id="fda4173f-8c40-41de-b935-3882ff1f37e7" data-name="Screw">
+							<circle cx="78" cy="710" r="21" fill="#333" />
+							<circle cx="78" cy="710" r="16.94" fill="#1a1a1a" />
+						</g>
+						<g id="bd10130f-fb50-4185-92d9-cee9527ed3cd" data-name="Screw">
+							<circle cx="470" cy="1673" r="21" fill="#333" />
+							<circle cx="470" cy="1673" r="16.94" fill="#1a1a1a" />
+						</g>
+						<g id="b85130d9-ab20-4dcf-9a4c-bbe532d764fe" data-name="Screw">
+							<circle cx="78" cy="1673" r="21" fill="#333" />
+							<circle cx="78" cy="1673" r="16.94" fill="#1a1a1a" />
+						</g>
+						<text transform="translate(126.64 810.67)" font-size="36" fill="#f2f2f2"
+							font-family="Purista-SemiBoldItalic, Purista" font-weight="600" font-style="italic">
+							<tspan letter-spacing="-0.04em">W</tspan>
+							<tspan x="29.74" y="0" letter-spacing="0em">ALKIE - </tspan>
+							<tspan x="155.81" y="0" letter-spacing="-0.07em">T</tspan>
+							<tspan x="173.52" y="0">ALKIE™</tspan>
+						</text>
+						<g id="aab1c6bd-8869-421a-bb4c-1c39527811b8" data-name="Spaker Grill">
+							<g>
+								<circle cx="123" cy="1339" r="9" fill="#333" />
+								<g mask="url(#ab8ad74c-7d21-49a8-9a95-5c36e7e3a0ca)">
+									<circle cx="123" cy="1339" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="123" cy="1372" r="9" fill="#333" />
+								<g mask="url(#baf08f84-3fe5-4e7e-8b96-47843c89257b)">
+									<circle cx="123" cy="1372" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="107" cy="1388" r="9" fill="#333" />
+								<g mask="url(#b89dcc69-bd00-4da4-ac0a-cf19823583cc)">
+									<circle cx="107" cy="1388" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="141" cy="1356" r="9" fill="#333" />
+								<g mask="url(#adaec1b5-b176-422f-89e6-308b57f358cb)">
+									<circle cx="141" cy="1356" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="192" cy="1339" r="9" fill="#333" />
+								<g mask="url(#fe3128a0-82fa-4971-ad0d-0074bec54129)">
+									<circle cx="192" cy="1339" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="175" cy="1356" r="9" fill="#333" />
+								<g mask="url(#b5ab1fee-609b-481c-89c8-d26478933135)">
+									<circle cx="175" cy="1356" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="210" cy="1356" r="9" fill="#333" />
+								<g mask="url(#a0c66c72-9372-45c1-9731-2fe578b55aa2)">
+									<circle cx="210" cy="1356" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="158" cy="1372" r="9" fill="#333" />
+								<g mask="url(#afd37426-75f4-45fb-bc90-018fa5ca3764)">
+									<circle cx="158" cy="1372" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="141" cy="1388" r="9" fill="#333" />
+								<g mask="url(#fdd62b21-df32-4df5-84f7-a3ec477a10a8)">
+									<circle cx="141" cy="1388" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="107" cy="1420" r="9" fill="#333" />
+								<g mask="url(#b72c5f8a-8e5c-45b3-b09d-5dfac8819794)">
+									<circle cx="107" cy="1420" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="107" cy="1452" r="9" fill="#333" />
+								<g mask="url(#b1b13973-879f-4678-bcbe-5e6230b43b71)">
+									<circle cx="107" cy="1452" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="107" cy="1486" r="9" fill="#333" />
+								<g mask="url(#f74634ab-cddf-43f6-9351-b71e5a8130d9)">
+									<circle cx="107" cy="1486" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="107" cy="1518" r="9" fill="#333" />
+								<g mask="url(#ebe0423a-ae4c-4285-af3d-9b20d31892c2)">
+									<circle cx="107" cy="1518" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="107" cy="1549" r="9" fill="#333" />
+								<g mask="url(#a6eebdc6-ab7a-41fd-bd0c-a1b126ef3703)">
+									<circle cx="107" cy="1549" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="107" cy="1581" r="9" fill="#333" />
+								<g mask="url(#f7a9e41f-c34c-42a2-9b7d-de88f2adee91)">
+									<circle cx="107" cy="1581" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="124" cy="1437" r="9" fill="#333" />
+								<g mask="url(#a43486fa-9c73-4b90-8fca-ecb67e406f0e)">
+									<circle cx="124" cy="1437" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="124" cy="1469" r="9" fill="#333" />
+								<g mask="url(#ae065b4e-66fe-4098-aea2-7297c0f7850f)">
+									<circle cx="124" cy="1469" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="124" cy="1501" r="9" fill="#333" />
+								<g mask="url(#ed076347-ab29-468b-ab35-e654a6a6237f)">
+									<circle cx="124" cy="1501" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="124" cy="1534" r="9" fill="#333" />
+								<g mask="url(#b7ec9c58-5035-49c4-aba8-5e984e381e11)">
+									<circle cx="124" cy="1534" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="124" cy="1566" r="9" fill="#333" />
+								<g mask="url(#b5b72901-cbe6-44a8-9789-ed3c08b6cfdb)">
+									<circle cx="124" cy="1566" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="125" cy="1598" r="9" fill="#333" />
+								<g mask="url(#a41c3075-a48e-4b8c-b03d-93e83c0d769a)">
+									<circle cx="125" cy="1598" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="107" cy="1614" r="9" fill="#333" />
+								<g mask="url(#bf583dcb-c737-430d-aa19-1a0cb075773a)">
+									<circle cx="107" cy="1614" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="142" cy="1618" r="9" fill="#333" />
+								<g mask="url(#bdcc3553-8952-4c5e-be4d-26fac0abcc0a)">
+									<circle cx="142" cy="1618" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1614" r="9" fill="#333" />
+								<g mask="url(#a39440c4-b0d6-4b3a-b7d6-82785c3fd7ae)">
+									<circle cx="452" cy="1614" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1594" r="9" fill="#333" />
+								<g mask="url(#e954d0bd-b71b-4741-a9e2-b229a7aa6ad7)">
+									<circle cx="434" cy="1594" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1578" r="9" fill="#333" />
+								<g mask="url(#b27bb7d6-d8a6-4795-b15b-a150a347ecde)">
+									<circle cx="452" cy="1578" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1563" r="9" fill="#333" />
+								<g mask="url(#b517acd8-3eed-492d-8bce-926fa269d52a)">
+									<circle cx="434" cy="1563" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1548" r="9" fill="#333" />
+								<g mask="url(#aec4af52-1107-4330-aae6-c69651c47c59)">
+									<circle cx="452" cy="1548" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1530" r="9" fill="#333" />
+								<g mask="url(#effc406a-bea2-4cd5-b1c1-7f5620f8f6de)">
+									<circle cx="434" cy="1530" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1512" r="9" fill="#333" />
+								<g mask="url(#e02d708f-d0e1-4823-9025-438f57f93c9f)">
+									<circle cx="452" cy="1512" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1497" r="9" fill="#333" />
+								<g mask="url(#e9d0ed2b-9576-420a-a590-8157d16d28fd)">
+									<circle cx="434" cy="1497" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="416" cy="1483" r="9" fill="#333" />
+								<g mask="url(#b809ef36-1c69-4ecc-a1e5-e2c8fac7c38e)">
+									<circle cx="416" cy="1483" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="401" cy="1468" r="9" fill="#333" />
+								<g mask="url(#e47be77b-89dd-4fe7-9ec0-26e91767b297)">
+									<circle cx="401" cy="1468" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1468" r="9" fill="#333" />
+								<g mask="url(#f7f24179-62f2-498f-9409-5594aa090971)">
+									<circle cx="434" cy="1468" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1483" r="9" fill="#333" />
+								<g mask="url(#bdc86965-40ed-4cb5-9391-ea759e018a50)">
+									<circle cx="452" cy="1483" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1452" r="9" fill="#333" />
+								<g mask="url(#b34f0658-2af6-4d1a-b171-d9f7fb42f8ce)">
+									<circle cx="452" cy="1452" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1434" r="9" fill="#333" />
+								<g mask="url(#a47a00c5-b35c-4cd7-b741-62e3e7dd3207)">
+									<circle cx="434" cy="1434" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="419" cy="1419" r="9" fill="#333" />
+								<g mask="url(#fc4a5b25-a82e-4152-905d-76acbaf5ce44)">
+									<circle cx="419" cy="1419" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1338" r="9" fill="#333" />
+								<g mask="url(#e8660b47-5693-400d-b2e3-bfbb1b469f8f)">
+									<circle cx="434" cy="1338" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1354" r="9" fill="#333" />
+								<g mask="url(#a77b55fb-147e-4548-ae5c-e6950830b401)">
+									<circle cx="452" cy="1354" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1372" r="9" fill="#333" />
+								<g mask="url(#e7cb0be0-eb1c-433d-bc58-db0f5e9c85e3)">
+									<circle cx="434" cy="1372" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1386" r="9" fill="#333" />
+								<g mask="url(#e510b1d4-b017-474b-8b74-080cb39ecea8)">
+									<circle cx="452" cy="1386" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="434" cy="1403" r="9" fill="#333" />
+								<g mask="url(#a4325704-c7cd-42f2-a182-f69d245123df)">
+									<circle cx="434" cy="1403" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="383" cy="1419" r="9" fill="#333" />
+								<g mask="url(#b78a6124-22e3-473b-9054-180e945c41b1)">
+									<circle cx="383" cy="1419" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="401" cy="1404" r="9" fill="#333" />
+								<g mask="url(#b79c04cd-458e-460e-b440-4625cd1a47b6)">
+									<circle cx="401" cy="1404" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="383" cy="1388" r="9" fill="#333" />
+								<g mask="url(#a196e2a9-0bc0-4ef7-92d5-b14c09b73dcd)">
+									<circle cx="383" cy="1388" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="365" cy="1404" r="9" fill="#333" />
+								<g mask="url(#e0b1c679-c320-4b88-8b7a-d33d85549906)">
+									<circle cx="365" cy="1404" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="365" cy="1372" r="9" fill="#333" />
+								<g mask="url(#adaeb78d-d774-4260-befc-de376b4576af)">
+									<circle cx="365" cy="1372" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="365" cy="1340" r="9" fill="#333" />
+								<g mask="url(#b11f3004-55c3-465e-8f50-2430812cfa11)">
+									<circle cx="365" cy="1340" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="383" cy="1356" r="9" fill="#333" />
+								<g mask="url(#fe00865b-c983-49e5-a5f2-ddcc25e3ea77)">
+									<circle cx="383" cy="1356" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="400" cy="1372" r="9" fill="#333" />
+								<g mask="url(#b73aaf01-687d-46f1-8f79-21f7b1691f56)">
+									<circle cx="400" cy="1372" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="347" cy="1356" r="9" fill="#333" />
+								<g mask="url(#e4f4ff3a-3f0a-4616-b7e0-f1a9d236f1e3)">
+									<circle cx="347" cy="1356" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="331" cy="1372" r="9" fill="#333" />
+								<g mask="url(#a39c4674-1e31-408c-b0b3-e8aa32198e76)">
+									<circle cx="331" cy="1372" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="296" cy="1340" r="9" fill="#333" />
+								<g mask="url(#b3cf62d7-28fa-4ca0-b948-9fa7f5350be0)">
+									<circle cx="296" cy="1340" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="278" cy="1356" r="9" fill="#333" />
+								<g mask="url(#ef56aa93-7b10-4ee7-ae38-82fbf86acf97)">
+									<circle cx="278" cy="1356" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="296" cy="1372" r="9" fill="#333" />
+								<g mask="url(#be26a12d-9c7e-4cf6-ad58-2dc400465044)">
+									<circle cx="296" cy="1372" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="244" cy="1356" r="9" fill="#333" />
+								<g mask="url(#f21647a8-738c-4d8d-b707-5432d433f5f6)">
+									<circle cx="244" cy="1356" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="226" cy="1372" r="9" fill="#333" />
+								<g mask="url(#e30ffbb5-ccc3-408d-a16a-1071300229d5)">
+									<circle cx="226" cy="1372" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="209" cy="1388" r="9" fill="#333" />
+								<g mask="url(#fcd89ed0-d1ad-4dc9-b03c-0947aa67af72)">
+									<circle cx="209" cy="1388" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="192" cy="1404" r="9" fill="#333" />
+								<g mask="url(#b2e04228-d228-418a-b8bb-61c70fa26f82)">
+									<circle cx="192" cy="1404" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="175" cy="1388" r="9" fill="#333" />
+								<g mask="url(#b1f67457-6a36-4390-9dc6-97c596256f04)">
+									<circle cx="175" cy="1388" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="158" cy="1406" r="9" fill="#333" />
+								<g mask="url(#f3a3433e-12bb-41ec-b48b-1f4df5b96470)">
+									<circle cx="158" cy="1406" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="278" cy="1388" r="9" fill="#333" />
+								<g mask="url(#eed85f9f-60ea-4e58-a76d-0c895d6482e0)">
+									<circle cx="278" cy="1388" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="244" cy="1388" r="9" fill="#333" />
+								<g mask="url(#ad00d123-f0d7-4669-bcca-f6c22e920f2a)">
+									<circle cx="244" cy="1388" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="400" cy="1436" r="9" fill="#333" />
+								<g mask="url(#e452601f-8f60-4a8a-92e7-52f4ea5fb335)">
+									<circle cx="400" cy="1436" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="296" cy="1501" r="9" fill="#1a1a1a" />
+								<g mask="url(#ea788ec0-2755-499f-9dfc-7e5034f3fefd)">
+									<circle cx="296" cy="1501" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="296" cy="1533" r="9" fill="#1a1a1a" />
+								<g mask="url(#b36da48f-d850-499a-a7d8-8da51b0aeb97)">
+									<circle cx="296" cy="1533" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="296" cy="1565" r="9" fill="#1a1a1a" />
+								<g mask="url(#f0428373-73cf-44c7-8d7a-1ca6a8b2333f)">
+									<circle cx="296" cy="1565" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="296" cy="1605" r="9" fill="#1a1a1a" />
+								<g mask="url(#a171bf6d-b7fd-400c-b89b-d7f6f4d6ebfb)">
+									<circle cx="296" cy="1605" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="314" cy="1623" r="9" fill="#1a1a1a" />
+								<g mask="url(#ec3d09b1-2b33-492c-9dce-adb0b540117e)">
+									<circle cx="314" cy="1623" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="314" cy="1585" r="9" fill="#1a1a1a" />
+								<g mask="url(#ae4aa6de-a891-47ab-a671-b811997b6171)">
+									<circle cx="314" cy="1585" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="314" cy="1547" r="9" fill="#1a1a1a" />
+								<g mask="url(#ab9f4ac2-81ea-4828-b169-66d61b65eb87)">
+									<circle cx="314" cy="1547" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="314" cy="1515" r="9" fill="#1a1a1a" />
+								<g mask="url(#f36db154-ecad-4226-a243-ab832cd18845)">
+									<circle cx="314" cy="1515" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="314" cy="1483" r="9" fill="#1a1a1a" />
+								<g mask="url(#b2096f63-be89-47dd-9de9-52f858c42fe2)">
+									<circle cx="314" cy="1483" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="296" cy="1468" r="9" fill="#1a1a1a" />
+								<g mask="url(#e7db0103-1c15-483a-9084-e5dc2b7ee7af)">
+									<circle cx="296" cy="1468" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="314" cy="1451" r="9" fill="#1a1a1a" />
+								<g mask="url(#b6083c2a-ecde-4409-9bd9-aa24c27bd4b6)">
+									<circle cx="314" cy="1451" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="296" cy="1403" r="9" fill="#1a1a1a" />
+								<g mask="url(#b04e36a1-5841-47b7-b346-5768b962eb14)">
+									<circle cx="296" cy="1403" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="313" cy="1388" r="9" fill="#1a1a1a" />
+								<g mask="url(#a8993035-f3a8-45ce-b84b-cd982d1bd9b4)">
+									<circle cx="313" cy="1388" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="313" cy="1419" r="9" fill="#1a1a1a" />
+								<g mask="url(#e6cfcd18-3600-4e3d-8ed5-26c71cf4fae4)">
+									<circle cx="313" cy="1419" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="331" cy="1403" r="9" fill="#1a1a1a" />
+								<g mask="url(#f7150c92-59bd-4eb4-bdec-9b1770701712)">
+									<circle cx="331" cy="1403" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="332" cy="1436" r="9" fill="#1a1a1a" />
+								<g mask="url(#b241fd61-663a-4b0c-a52f-a99db747a464)">
+									<circle cx="332" cy="1436" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="350" cy="1419" r="9" fill="#1a1a1a" />
+								<g mask="url(#bf982e5a-2b4d-438f-88f0-dac51dd09c3f)">
+									<circle cx="350" cy="1419" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="348" cy="1451" r="9" fill="#1a1a1a" />
+								<g mask="url(#ed193934-f7a8-499f-b926-0f7ae256b37f)">
+									<circle cx="348" cy="1451" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="330" cy="1467" r="9" fill="#1a1a1a" />
+								<g mask="url(#a84acf41-1319-4bff-b722-ab0417d2ba51)">
+									<circle cx="330" cy="1467" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="452" cy="1418" r="9" fill="#1a1a1a" />
+								<g mask="url(#fb45ced7-e445-460b-8ee6-73ca03f75581)">
+									<circle cx="452" cy="1418" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="366" cy="1434" r="9" fill="#1a1a1a" />
+								<g mask="url(#fe63ebb7-46dc-406b-901e-ab1469998f94)">
+									<circle cx="366" cy="1434" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="365" cy="1467" r="9" fill="#1a1a1a" />
+								<g mask="url(#a176091c-108b-42c5-89f5-8f9e21f66f76)">
+									<circle cx="365" cy="1467" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="348" cy="1483" r="9" fill="#1a1a1a" />
+								<g mask="url(#e18625a0-68c7-44e3-a603-0fa2313ca325)">
+									<circle cx="348" cy="1483" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="330" cy="1499" r="9" fill="#1a1a1a" />
+								<g mask="url(#eefc2cfe-592f-40a2-9edf-575a07ba3844)">
+									<circle cx="330" cy="1499" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="332" cy="1531" r="9" fill="#1a1a1a" />
+								<g mask="url(#ad03511d-99e5-4037-95fb-1adf0f880d51)">
+									<circle cx="332" cy="1531" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="350" cy="1515" r="9" fill="#1a1a1a" />
+								<g mask="url(#a60cbe03-aa87-41c9-adb8-ec5f2c9dae52)">
+									<circle cx="350" cy="1515" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="365" cy="1499" r="9" fill="#1a1a1a" />
+								<g mask="url(#bb3350be-c497-4d22-bd79-9b6c296ee669)">
+									<circle cx="365" cy="1499" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="383" cy="1483" r="9" fill="#1a1a1a" />
+								<g mask="url(#a760b3a2-a616-4d9e-ad43-198af5cb0950)">
+									<circle cx="383" cy="1483" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="381" cy="1451" r="9" fill="#1a1a1a" />
+								<g mask="url(#b13663fd-30e1-45b1-b41b-7c906be6f6df)">
+									<circle cx="381" cy="1451" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="400" cy="1497" r="9" fill="#1a1a1a" />
+								<g mask="url(#bab7d087-0041-4eb7-b418-09776944514a)">
+									<circle cx="400" cy="1497" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="383" cy="1515" r="9" fill="#1a1a1a" />
+								<g mask="url(#badd9476-fee1-4fe0-bb6c-70240bc722a5)">
+									<circle cx="383" cy="1515" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="365" cy="1530" r="9" fill="#1a1a1a" />
+								<g mask="url(#f7805643-cbbc-42c5-9f79-336d92dae72f)">
+									<circle cx="365" cy="1530" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="348" cy="1547" r="9" fill="#1a1a1a" />
+								<g mask="url(#ed94fb30-997c-4ec5-bf45-bb0a6627faf9)">
+									<circle cx="348" cy="1547" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="331" cy="1566" r="9" fill="#1a1a1a" />
+								<g mask="url(#b75199f5-993d-4891-ae14-4a3a9e846c89)">
+									<circle cx="331" cy="1566" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="330" cy="1604" r="9" fill="#1a1a1a" />
+								<g mask="url(#ba05697c-23a7-4006-8e50-e0d671fbd8da)">
+									<circle cx="330" cy="1604" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="348" cy="1585" r="9" fill="#1a1a1a" />
+								<g mask="url(#e43fc65c-96ed-4c3d-8f5b-a0c227420fcb)">
+									<circle cx="348" cy="1585" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="365" cy="1565" r="9" fill="#1a1a1a" />
+								<g mask="url(#fb61970b-228f-4c07-a59d-785160f4d630)">
+									<circle cx="365" cy="1565" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="366" cy="1602" r="9" fill="#1a1a1a" />
+								<g mask="url(#e799c615-00e6-4272-b7cd-3a51fe56357a)">
+									<circle cx="366" cy="1602" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="347" cy="1622" r="9" fill="#1a1a1a" />
+								<g mask="url(#ea60767d-641a-471f-b6f3-56bcffc19129)">
+									<circle cx="347" cy="1622" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="383" cy="1620" r="9" fill="#1a1a1a" />
+								<g mask="url(#ea608927-50ce-46c7-b92c-140442f09f89)">
+									<circle cx="383" cy="1620" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="383" cy="1585" r="9" fill="#1a1a1a" />
+								<g mask="url(#ada8d2f5-3099-49cf-be67-d36bf9f632ff)">
+									<circle cx="383" cy="1585" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="400" cy="1563" r="9" fill="#1a1a1a" />
+								<g mask="url(#fe5aeef1-2294-4d88-958f-2cf13a971381)">
+									<circle cx="400" cy="1563" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="400" cy="1598" r="9" fill="#1a1a1a" />
+								<g mask="url(#bd39b7f7-b6f5-4064-996e-f06f91cb9cc7)">
+									<circle cx="400" cy="1598" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="419" cy="1545" r="9" fill="#1a1a1a" />
+								<g mask="url(#e6923eaf-97fe-4520-bfa1-8be35339cff3)">
+									<circle cx="419" cy="1545" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="416" cy="1616" r="9" fill="#1a1a1a" />
+								<g mask="url(#a1a9faff-57f3-4bbc-ae83-557d1c70a2c0)">
+									<circle cx="416" cy="1616" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="279" cy="1625" r="9" fill="#1a1a1a" />
+								<g mask="url(#a8954ecc-73e1-4b48-8cdd-be0d2df51c47)">
+									<circle cx="279" cy="1625" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="244" cy="1625" r="9" fill="#1a1a1a" />
+								<g mask="url(#e204f749-78f7-40e7-b31f-11e03f23e88d)">
+									<circle cx="244" cy="1625" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="210" cy="1623" r="9" fill="#1a1a1a" />
+								<g mask="url(#a63e6491-4015-41c6-94c0-9437a80bfb1f)">
+									<circle cx="210" cy="1623" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="174" cy="1622" r="9" fill="#1a1a1a" />
+								<g mask="url(#b978bfed-05b0-4765-9f22-022cfa931fb1)">
+									<circle cx="174" cy="1622" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="192" cy="1605" r="9" fill="#1a1a1a" />
+								<g mask="url(#bd0e6a8c-8df7-4087-b564-f4528ecbf2a4)">
+									<circle cx="192" cy="1605" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="210" cy="1587" r="9" fill="#1a1a1a" />
+								<g mask="url(#a7694689-e325-49d0-a9df-d129fdccdc10)">
+									<circle cx="210" cy="1587" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="228" cy="1606" r="9" fill="#1a1a1a" />
+								<g mask="url(#a1d774e5-2bca-4548-9a01-9b2fecd8956d)">
+									<circle cx="228" cy="1606" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="244" cy="1587" r="9" fill="#1a1a1a" />
+								<g mask="url(#b9170ce6-6ec5-411d-abec-fae3b89e4765)">
+									<circle cx="244" cy="1587" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="262" cy="1604" r="9" fill="#1a1a1a" />
+								<g mask="url(#f01921cb-f3fc-4e48-82be-69065aec3005)">
+									<circle cx="262" cy="1604" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="279" cy="1587" r="9" fill="#1a1a1a" />
+								<g mask="url(#e706d1b5-b1e4-47a1-b912-f1e8c60e24ac)">
+									<circle cx="279" cy="1587" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="262" cy="1567" r="9" fill="#1a1a1a" />
+								<g mask="url(#b21a208d-16e7-4787-ba4e-11920b095291)">
+									<circle cx="262" cy="1567" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="227" cy="1566" r="9" fill="#1a1a1a" />
+								<g mask="url(#aeafcdb7-f931-4a4e-b9d0-8555163c3d8d)">
+									<circle cx="227" cy="1566" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="192" cy="1567" r="9" fill="#1a1a1a" />
+								<g mask="url(#b1b5b7e9-529a-4051-a2c1-69a2e6aa0595)">
+									<circle cx="192" cy="1567" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="175" cy="1585" r="9" fill="#1a1a1a" />
+								<g mask="url(#be2c5577-1867-4ca1-b809-f3819b969915)">
+									<circle cx="175" cy="1585" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="158" cy="1602" r="9" fill="#1a1a1a" />
+								<g mask="url(#f7398693-0f66-4645-951e-f34da9a156eb)">
+									<circle cx="158" cy="1602" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="140" cy="1584" r="9" fill="#1a1a1a" />
+								<g mask="url(#bdbfe027-6f96-457e-b422-b4b6bf1c01f0)">
+									<circle cx="140" cy="1584" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="160" cy="1567" r="9" fill="#1a1a1a" />
+								<g mask="url(#a9f7c985-eef7-425d-87e6-e70e47d9118b)">
+									<circle cx="160" cy="1567" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="140" cy="1548" r="9" fill="#1a1a1a" />
+								<g mask="url(#ba0b3498-41c1-49b4-8346-86b0ab650309)">
+									<circle cx="140" cy="1548" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="175" cy="1548" r="9" fill="#1a1a1a" />
+								<g mask="url(#b6626fc7-7f81-4b14-b541-7cb9e10cdea3)">
+									<circle cx="175" cy="1548" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="210" cy="1547" r="9" fill="#1a1a1a" />
+								<g mask="url(#ae2c217a-d70a-44f5-bb1f-3f30defe1105)">
+									<circle cx="210" cy="1547" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="244" cy="1548" r="9" fill="#1a1a1a" />
+								<g mask="url(#f431313a-200f-4c62-b662-bc9d4edc49cd)">
+									<circle cx="244" cy="1548" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="279" cy="1548" r="9" fill="#1a1a1a" />
+								<g mask="url(#bd97d193-a74c-447f-bfa8-b6bded3526b2)">
+									<circle cx="279" cy="1548" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="262" cy="1533" r="9" fill="#1a1a1a" />
+								<g mask="url(#a5a5443c-9129-4584-a98d-81cdf2d29e98)">
+									<circle cx="262" cy="1533" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="244" cy="1516" r="9" fill="#1a1a1a" />
+								<g mask="url(#b6d50be0-fdd3-4302-8aed-ddd4d18663eb)">
+									<circle cx="244" cy="1516" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="228" cy="1533" r="9" fill="#1a1a1a" />
+								<g mask="url(#b21f6274-a19e-49c2-8ca3-051986183873)">
+									<circle cx="228" cy="1533" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="193" cy="1533" r="9" fill="#1a1a1a" />
+								<g mask="url(#e1ddd805-4ed0-428a-a58e-dc92eebe69b2)">
+									<circle cx="193" cy="1533" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="158" cy="1533" r="9" fill="#1a1a1a" />
+								<g mask="url(#e7f51d47-39ac-4922-b942-8cfbe1a440c1)">
+									<circle cx="158" cy="1533" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="140" cy="1516" r="9" fill="#1a1a1a" />
+								<g mask="url(#e5bb7d59-207f-4c7d-8c24-7affb9fd7e77)">
+									<circle cx="140" cy="1516" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="140" cy="1483" r="9" fill="#1a1a1a" />
+								<g mask="url(#ac5f92a3-97b7-4d10-a50a-ba56d6082040)">
+									<circle cx="140" cy="1483" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="158" cy="1501" r="9" fill="#1a1a1a" />
+								<g mask="url(#b3fd0c64-9963-4643-9df0-7b4ea3d9d59f)">
+									<circle cx="158" cy="1501" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="175" cy="1485" r="9" fill="#1a1a1a" />
+								<g mask="url(#b70111ce-95b7-48ed-b131-c99a60de88d5)">
+									<circle cx="175" cy="1485" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="193" cy="1501" r="9" fill="#1a1a1a" />
+								<g mask="url(#a21b7cbe-6fca-4d14-a76d-693115af2686)">
+									<circle cx="193" cy="1501" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="174" cy="1517" r="9" fill="#1a1a1a" />
+								<g mask="url(#f399064f-26e1-427e-bca4-35f13c2458c5)">
+									<circle cx="174" cy="1517" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="210" cy="1516" r="9" fill="#1a1a1a" />
+								<g mask="url(#bbbb0b5f-fd36-49c3-b17c-9113fb23c931)">
+									<circle cx="210" cy="1516" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="227" cy="1500" r="9" fill="#1a1a1a" />
+								<g mask="url(#ed3eea4b-7932-498f-933d-6b15d669d924)">
+									<circle cx="227" cy="1500" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="263" cy="1499" r="9" fill="#1a1a1a" />
+								<g mask="url(#bb08432b-f435-49b1-a3c9-fb6880f9fc14)">
+									<circle cx="263" cy="1499" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="279" cy="1516" r="9" fill="#1a1a1a" />
+								<g mask="url(#ec3ab7d6-3fc3-4ff3-ba37-da1a48650a81)">
+									<circle cx="279" cy="1516" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="279" cy="1485" r="9" fill="#1a1a1a" />
+								<g mask="url(#f42c855b-500c-4027-ad9e-cf7f364a8638)">
+									<circle cx="279" cy="1485" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="263" cy="1468" r="9" fill="#1a1a1a" />
+								<g mask="url(#b826eaf8-05f4-4dd1-bc91-6ffd99ea6d02)">
+									<circle cx="263" cy="1468" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="281" cy="1452" r="9" fill="#1a1a1a" />
+								<g mask="url(#f3be0f55-1a53-474e-8a52-61f2e91519b5)">
+									<circle cx="281" cy="1452" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="281" cy="1420" r="9" fill="#1a1a1a" />
+								<g mask="url(#b335baa9-2407-4f6d-b868-ce485b14c946)">
+									<circle cx="281" cy="1420" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="262" cy="1404" r="9" fill="#1a1a1a" />
+								<g mask="url(#ab7e7898-f54e-4a11-92db-116e394f9740)">
+									<circle cx="262" cy="1404" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="244" cy="1420" r="9" fill="#1a1a1a" />
+								<g mask="url(#a080dfa3-f968-42ee-990c-ce7c24bca518)">
+									<circle cx="244" cy="1420" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="263" cy="1436" r="9" fill="#1a1a1a" />
+								<g mask="url(#e6a0b6ab-4af8-40a8-a0b9-f3558f3bc6e6)">
+									<circle cx="263" cy="1436" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="244" cy="1451" r="9" fill="#1a1a1a" />
+								<g mask="url(#beadd4ca-c809-4182-b960-a46a89b52604)">
+									<circle cx="244" cy="1451" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="245" cy="1484" r="9" fill="#1a1a1a" />
+								<g mask="url(#a0ae38e6-e674-43d6-936b-4b8c8fb655c9)">
+									<circle cx="245" cy="1484" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="228" cy="1467" r="9" fill="#1a1a1a" />
+								<g mask="url(#acdef715-eda5-4402-b2d7-ba65e59cacdc)">
+									<circle cx="228" cy="1467" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="210" cy="1484" r="9" fill="#1a1a1a" />
+								<g mask="url(#a6abacda-61bf-447c-beff-2f95f43e448d)">
+									<circle cx="210" cy="1484" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="193" cy="1467" r="9" fill="#1a1a1a" />
+								<g mask="url(#a391d083-e606-4b3c-aeb4-03500145a581)">
+									<circle cx="193" cy="1467" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="175" cy="1453" r="9" fill="#1a1a1a" />
+								<g mask="url(#ac135790-f6af-460c-aab5-455bc393a314)">
+									<circle cx="175" cy="1453" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="158" cy="1437" r="9" fill="#1a1a1a" />
+								<g mask="url(#b50bb833-6cbe-4473-8b4e-b9287ad6fe3c)">
+									<circle cx="158" cy="1437" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="140" cy="1420" r="9" fill="#1a1a1a" />
+								<g mask="url(#be7c81b9-4c60-48c3-8fb6-c42a0cdf5ee7)">
+									<circle cx="140" cy="1420" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="141" cy="1453" r="9" fill="#1a1a1a" />
+								<g mask="url(#f7ff7546-c573-4558-901f-4e2370adffdb)">
+									<circle cx="141" cy="1453" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="176" cy="1422" r="9" fill="#1a1a1a" />
+								<g mask="url(#b8d7e744-b2ca-41cc-810e-5a5bcd37748b)">
+									<circle cx="176" cy="1422" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="193" cy="1436" r="9" fill="#1a1a1a" />
+								<g mask="url(#e1faff7d-5065-4372-9a12-c9801c2101f9)">
+									<circle cx="193" cy="1436" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="210" cy="1422" r="9" fill="#1a1a1a" />
+								<g mask="url(#b4a802f2-3101-4549-a804-e7ef001b6548)">
+									<circle cx="210" cy="1422" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="228" cy="1437" r="9" fill="#1a1a1a" />
+								<g mask="url(#a40dc28a-f583-4f13-bde8-ffb203791d52)">
+									<circle cx="228" cy="1437" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="210" cy="1453" r="9" fill="#1a1a1a" />
+								<g mask="url(#bfe324cb-3a18-4d24-a0c8-4e1b1933aeac)">
+									<circle cx="210" cy="1453" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="381" cy="1547" r="9" fill="#1a1a1a" />
+								<g mask="url(#a1c56a72-cdd4-4748-95da-631487c39de6)">
+									<circle cx="381" cy="1547" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="400" cy="1530" r="9" fill="#1a1a1a" />
+								<g mask="url(#e2148cd6-2f2d-46d2-b257-0cb87962e626)">
+									<circle cx="400" cy="1530" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="416" cy="1513" r="9" fill="#1a1a1a" />
+								<g mask="url(#b91b32c0-ac37-4f2c-a78a-5cce7bc1fea5)">
+									<circle cx="416" cy="1513" r="9" fill="#232323" />
+								</g>
+							</g>
+							<g>
+								<circle cx="416" cy="1581" r="9" fill="#1a1a1a" />
+								<g mask="url(#af52b801-ba61-48bb-b668-51da0b56e24e)">
+									<circle cx="416" cy="1581" r="9" fill="#232323" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g id="bb87cbf8-24be-4f2e-b0ad-abc7b105ea03" data-name="Display">
+						<text id="e8f33816-9fe4-427e-a12b-a3ef4637757e" data-name="Channel" transform="translate(128.85 956.11)"
+							font-size="152" :fill="frequencyColor" font-family="BF4Numbers, Purista"
+							v-if="poweredOn">{{frequency}}</text>
+						<text id="b00a4936-ebbc-4eee-af9f-eeb02d92dcc9" data-name="Code" transform="translate(140.36 1043.58)"
+							font-size="89" :fill="subColor" font-family="BF4Numbers, Purista"
+							v-if="poweredOn || isPowerCycling">{{ subChannel }}</text>
+						<g id="bbc29a8f-0c9a-4826-a48c-e1bc512d0a46" data-name="Bottom" v-if="poweredOn">
+							<g id="ee3c8960-c7d8-4e79-84a8-8dc0b6afe992" data-name="Lock">
+								<rect x="401.13" y="1018.53" width="26" height="18.47" rx="4.22" fill="#1a1a1a" />
+								<path d="M422.63,1020c2-19-19-19-17,0" fill="none" stroke="#1a1a1a" stroke-miterlimit="10"
+									stroke-width="3.1" />
+							</g>
+							<text transform="translate(321.19 1037)" font-size="24" :fill="transmitColor"
+								font-family="Purista-SemiBold, Purista" font-weight="600">Tx</text>
+							<text transform="translate(362.38 1037)" font-size="24" :fill="reciveColor"
+								font-family="Purista-SemiBold, Purista" font-weight="600">Rx</text>
+						</g>
+						<g id="eb819579-c830-4a4f-b38b-9f8134945d80" data-name="Battery Canvas" v-if="poweredOn">
+							<path d="M423,873.87h3a1,1,0,0,1,1,1v7.94a1,1,0,0,1-1,1h-3a0,0,0,0,1,0,0v-10A0,0,0,0,1,423,873.87Z"
+								fill="#1a1a1a" />
+							<g id="b918f86c-3d89-409c-80ed-3cddc2861139" data-name="Bars">
+								<rect x="374" y="869.87" width="9" height="17" fill="#1a1a1a" />
+								<rect x="390" y="869.87" width="9" height="17" fill="#1a1a1a" />
+								<rect x="406" y="869.87" width="9" height="17" fill="#1a1a1a" />
+							</g>
+							<g id="f0c26573-8f67-49bc-a0a4-668f71cd69da" data-name="Clamp_L">
+								<path
+									d="M369.58,891.22a4.37,4.37,0,0,1-4.36-4.36V869.69a4.37,4.37,0,0,1,4.36-4.39h1v3h-1a1.42,1.42,0,0,0-1.41,1.4v17.17a1.43,1.43,0,0,0,1.41,1.41h1v3Z"
+									fill="#1a1a1a" />
+							</g>
+							<g id="b928e463-0ee3-4dc0-80a4-fbf38b89d7be" data-name="Clamp_R">
+								<path
+									d="M418.34,891.22v-3h1a1.43,1.43,0,0,0,1.41-1.41V869.69a1.42,1.42,0,0,0-1.41-1.4h-1v-3h1a4.28,4.28,0,0,1,3.1,1.28,4.22,4.22,0,0,1,1.3,3.11v17.17a4.19,4.19,0,0,1-1.3,3.08,4.28,4.28,0,0,1-3.1,1.28Z"
+									fill="#1a1a1a" />
+							</g>
+						</g>
+					</g>
+				</g>
+			</svg>
+
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

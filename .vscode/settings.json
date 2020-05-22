@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.idea": true,
+    "**/.vscode": true,
+    "**/cache": true,
+    "**/data": true,
+    "**/modules": true,
+    "**/node_modules": true,
+    "**/*.dll": true,
+    "**/*.exe": true
+  }
+}

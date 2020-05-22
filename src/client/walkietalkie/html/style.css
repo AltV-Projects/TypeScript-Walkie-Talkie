@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
+}
+
+body {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+#radio {
+  border-bottom: 0;
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+}

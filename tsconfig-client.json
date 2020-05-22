@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "ESNEXT",
+    "outDir": "./resources/walkietalkie/client",
+    "rootDir": "./src/client"
+  },
+  "include": ["./src/client/**/*.ts"]
+}
