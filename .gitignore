@@ -115,11 +115,14 @@ dist
 .pnp.*
 
 # Custom
+.idea/
+.vscode/
 cache/
 crashdumps/
 data/
 modules/
 resources/
 altv-server.exe
+altv-voice-server.exe
 libnode.dll
 server.cfg
