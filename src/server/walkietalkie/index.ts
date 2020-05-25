@@ -2,7 +2,6 @@ import * as alt from "alt-server";
 
 let voiceChannels: alt.VoiceChannel[] = [];
 
-//#region Serverside-only events
 /**
  * Serverside call,
  * removes the player from his current voice channel
@@ -13,9 +12,6 @@ alt.on("server::radio::removePlayerFromVoiceChannel", (player: alt.Player) => {
   voiceChannels.forEach((voiceChannel: alt.VoiceChannel) => {
     if (voiceChannel.isPlayerInChannel(player)) {
       voiceChannel.removePlayer(player);
-      alt.log(
-        `Removed player from voice channel ${voiceChannel.getMeta("frequency")}`
-      );
     }
   });
 });
@@ -37,11 +33,6 @@ alt.on(
           found = true;
           voiceChannel.addPlayer(player);
           player.setMeta("voiceChannel", voiceChannel);
-          alt.log(
-            `Added player to existing voice channel ${voiceChannel.getMeta(
-              "frequency"
-            )}`
-          );
         }
       });
     }
@@ -55,16 +46,9 @@ alt.on(
     newVoiceChannel.addPlayer(player);
     player.setMeta("voiceChannel", newVoiceChannel);
     voiceChannels.push(newVoiceChannel);
-    alt.log(
-      `Added player to new voice channel ${newVoiceChannel.getMeta(
-        "frequency"
-      )}`
-    );
   }
 );
-//#endregion
 
-//#region Clientside events
 /**
  * Clientside call,
  * changes the (sub)channel of the given player
@@ -75,7 +59,6 @@ alt.on(
 alt.onClient(
   "client::radio::onChannelChange",
   (player: alt.Player, channel: number, subChannel: number) => {
-    alt.log(`${player.name} requested voice channel change`);
     alt.emit("server::radio::removePlayerFromVoiceChannel", player);
     alt.emit(
       "server::radio::addPlayerToVoiceChannel",
@@ -124,4 +107,3 @@ alt.onClient("client::radio::transmissionEnded", (player: alt.Player) => {
     alt.emitClient(loopedPlayer, "server::radio::reciveTransmissionEnd");
   });
 });
-//#endregion

@@ -80,7 +80,6 @@ const app = new Vue({
       }
     },
     toggleDevicePower() {
-      console.log(`toggleDevicePower -> ${this.isPowerCycling}`);
       if (this.isPowerCycling) return;
       this.isPowerCycling = true;
       if (this.poweredOn) {
