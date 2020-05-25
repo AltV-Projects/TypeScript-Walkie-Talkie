@@ -2,6 +2,12 @@ import * as alt from "alt-server";
 
 let voiceChannels: alt.VoiceChannel[] = [];
 
+//#region Serverside-only events
+/**
+ * Serverside call,
+ * removes the player from his current voice channel
+ * @param {alt.Player} player - Handle to the calling player
+ */
 alt.on("server::radio::removePlayerFromVoiceChannel", (player: alt.Player) => {
   if (voiceChannels.length == 0) return;
   voiceChannels.forEach((voiceChannel: alt.VoiceChannel) => {
@@ -14,6 +20,13 @@ alt.on("server::radio::removePlayerFromVoiceChannel", (player: alt.Player) => {
   });
 });
 
+/**
+ * Serverside call,
+ * adds a player to the given voice channel
+ * @param {alt.Player} player - Handle to the calling player
+ * @param {number} channel - New channel/frequency
+ * @param {number} subChannel - Subchannel to prevent interference
+ */
 alt.on(
   "server::radio::addPlayerToVoiceChannel",
   (player: alt.Player, channel: number, subChannel: number) => {
@@ -49,7 +62,16 @@ alt.on(
     );
   }
 );
+//#endregion
 
+//#region Clientside events
+/**
+ * Clientside call,
+ * changes the (sub)channel of the given player
+ * @param {alt.Player} player - Handle to the calling player
+ * @param {number} channel - New channel/frequency
+ * @param {number} subChannel - Subchannel to prevent interference
+ */
 alt.onClient(
   "client::radio::onChannelChange",
   (player: alt.Player, channel: number, subChannel: number) => {
@@ -64,6 +86,20 @@ alt.onClient(
   }
 );
 
+/**
+ * Clientside call,
+ * removing the player from his (sub)current channel
+ * @param {alt.Player} player - Handle to the calling player
+ */
+alt.onClient("client::radio:removePlayer", (player: alt.Player) =>
+  alt.emit("server::radio::removePlayerFromVoiceChannel", player)
+);
+
+/**
+ * Clientside call,
+ * informs all player in the same channel that a transmission has been started
+ * @param {alt.Player} player - Handle to the calling player
+ */
 alt.onClient("client::radio::transmissionStarted", (player: alt.Player) => {
   let voiceChannel: alt.VoiceChannel = player.getMeta("voiceChannel");
   voiceChannel.unmutePlayer(player);
@@ -74,6 +110,11 @@ alt.onClient("client::radio::transmissionStarted", (player: alt.Player) => {
   });
 });
 
+/**
+ * Clientside call,
+ * informs all player in the same channel that a transmission has been ended
+ * @param {alt.Player} player - Handle to the calling player
+ */
 alt.onClient("client::radio::transmissionEnded", (player: alt.Player) => {
   let voiceChannel: alt.VoiceChannel = player.getMeta("voiceChannel");
   voiceChannel.mutePlayer(player);
@@ -83,3 +124,4 @@ alt.onClient("client::radio::transmissionEnded", (player: alt.Player) => {
     alt.emitClient(loopedPlayer, "server::radio::reciveTransmissionEnd");
   });
 });
+//#endregion
