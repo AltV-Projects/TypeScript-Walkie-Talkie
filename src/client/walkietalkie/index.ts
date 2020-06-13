@@ -4,6 +4,7 @@ let radioView: alt.WebView;
 let player: alt.Player = alt.Player.local;
 
 let isRadioTunredOn = false;
+let isChannelSet = false;
 
 /**
  * Clientside/alt:V internal call,
@@ -41,9 +42,14 @@ alt.on("connectionComplete", () => {
   radioView.on(
     "webView::radio::onChannelChange",
     (channel: number, subChannel: number) => {
+      isChannelSet = true;
       alt.emitServer("client::radio::onChannelChange", channel, subChannel);
     }
   );
+
+  radioView.on("webView::radio::disableChannelSet", () => {
+    isChannelSet = false;
+  });
 
   /**
    * WebView call,
@@ -140,6 +146,7 @@ alt.on("keyup", (key: number) => {
 alt.on("keydown", (key: number) => {
   if (key !== 220) return;
   if (!isRadioTunredOn) return;
+  if (!isChannelSet) return;
   natives.taskPlayAnim(
     player.scriptID,
     "random@arrests",
@@ -165,6 +172,8 @@ alt.on("keydown", (key: number) => {
  */
 alt.on("keyup", (key: number) => {
   if (key !== 220) return;
+  if (!isRadioTunredOn) return;
+  if (!isChannelSet) return;
   natives.clearPedTasks(player.scriptID);
   radioView.emit("webView::radio::endTransmission");
 });
