@@ -181,6 +181,7 @@ const app = new Vue({
       if ("alt" in window) alt.emit("webview::radio:finishedLoading");
       alt.on("webView::radio::toggleRadioDisplay", function () {
         self.shown = !self.shown;
+        alt.emit("webView::radio::setFocus", self.shown);
       });
       alt.on("webView::radio::startTransmission", self.startTransmission);
       alt.on("webView::radio::endTransmission", self.endTransmission);
