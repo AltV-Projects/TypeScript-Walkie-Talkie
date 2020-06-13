@@ -4,7 +4,7 @@
   "description": "A basic boilerplate to get started using typescript with alt:V",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p tsconfig-server.json && tsc -p tsconfig-client.json",
+    "build": "tsc -p tsconfig-server.json && tsc -p tsconfig-client.json && npm run copy:meta",
     "build:server:watch": "tsc -w -p tsconfig-server.json",
     "build:client:watch": "tsc -w -p tsconfig-client.json",
     "copy:meta": "cd ./src && copyfiles resource.cfg ../resources/walkietalkie/  && copyfiles ./client/**/*.html ./client/**/*.js ./client/**/*.css ./client/**/*.mp3 ../resources/walkietalkie/",
