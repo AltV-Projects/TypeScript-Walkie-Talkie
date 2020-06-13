@@ -32,6 +32,7 @@ alt.on(
         if (voiceChannel.getMeta("frequency") == `${channel}-${subChannel}`) {
           found = true;
           voiceChannel.addPlayer(player);
+          voiceChannel.mutePlayer(player);
           player.setMeta("voiceChannel", voiceChannel);
         }
       });
