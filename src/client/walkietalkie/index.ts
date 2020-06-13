@@ -61,6 +61,15 @@ alt.on("connectionComplete", () => {
     alt.emitServer("client::radio::transmissionEnded");
   });
 
+  /**
+   * WebView call,
+   * firend when the user shows/hides the walkie talkie
+   */
+  radioView.on("webView::radio::setFocus", (focus: boolean) => {
+    if (focus) radioView.focus();
+    else radioView.unfocus();
+  });
+
   natives.requestAnimDict("random@arrests");
 });
 
