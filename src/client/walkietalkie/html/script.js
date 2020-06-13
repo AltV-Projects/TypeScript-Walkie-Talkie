@@ -36,11 +36,13 @@ const app = new Vue({
         this.menu.index = 0;
         this.playKeypressSound();
         this.frequencyColor = this.color.yellow;
+        alt.emit("webView::radio::disableChannelSet");
       } else {
         if (this.menu.index == 0) {
           this.menu.index = 1;
           this.subColor = this.color.yellow;
           this.playKeypressSound();
+          alt.emit("webView::radio::disableChannelSet");
         } else {
           this.menu.active = false;
           this.menu.index = -1;
