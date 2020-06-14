@@ -2,6 +2,11 @@ const app = new Vue({
   el: "#app",
   data: function () {
     return {
+      // Here you can set the maximum number of (sub)channels
+      maxFrequency: 12,
+      maxSubChannel: 128,
+
+      // Start logic, only modify if you know what to do
       poweredOn: false,
       isPowerCycling: false,
       frequency: 0,
@@ -62,10 +67,10 @@ const app = new Vue({
 
       if (this.menu.index == 0) {
         this.frequency--;
-        if (this.frequency < 0) this.frequency = 12;
+        if (this.frequency < 0) this.frequency = this.maxFrequency;
       } else if (this.menu.index == 1) {
         this.subChannel--;
-        if (this.subChannel < 0) this.subChannel = 128;
+        if (this.subChannel < 0) this.subChannel = this.maxSubChannel;
       }
     },
     raiseFrequency() {
@@ -75,10 +80,10 @@ const app = new Vue({
 
       if (this.menu.index == 0) {
         this.frequency++;
-        if (this.frequency > 12) this.frequency = 0;
+        if (this.frequency > this.maxFrequency) this.frequency = 0;
       } else if (this.menu.index == 1) {
         this.subChannel++;
-        if (this.subChannel > 128) this.subChannel = 0;
+        if (this.subChannel > this.maxSubChannel) this.subChannel = 0;
       }
     },
     toggleDevicePower() {
