@@ -121,7 +121,8 @@ const app = new Vue({
     },
 
     playNoise() {
-      this.noise = new Audio("./audio/incomming_transmission.mp3");
+      if (!this.noise)
+        this.noise = new Audio("./audio/incomming_transmission.mp3");
       this.noise.play();
       this.noise.addEventListener("timeupdate", this.repeatNoise);
     },
@@ -152,7 +153,6 @@ const app = new Vue({
       if (this.noise) {
         this.noise.removeEventListener("timeupdate", this.repeatNoise, true);
         this.noise.pause();
-        this.noise = undefined;
       }
       new Audio("./audio/transmission_end.mp3").play();
       if ("alt" in window) alt.emit("webView::radio::transmissionEnded");
