@@ -7,7 +7,7 @@
     "build": "tsc -p tsconfig-server.json && tsc -p tsconfig-client.json && npm run copy:meta",
     "build:server:watch": "tsc -w -p tsconfig-server.json",
     "build:client:watch": "tsc -w -p tsconfig-client.json",
-    "copy:meta": "cd ./src && copyfiles resource.cfg ../resources/walkietalkie/  && copyfiles ./client/**/*.html ./client/**/*.js ./client/**/*.css ./client/**/*.mp3 ../resources/walkietalkie/",
+    "copy:meta": "cd ./src && cpx resource.cfg ../resources/walkietalkie/  && cpx -v \"./client/**/*.!(ts)\" ../resources/walkietalkie/",
     "copy:run": "npm run copy:meta && altv-server.exe"
   },
   "repository": {
@@ -27,10 +27,12 @@
   },
   "homepage": "https://github.com/AltV-Projects/TypeScript-Boilerplate#readme",
   "devDependencies": {
-    "@altv/native-types": "^1.0.3",
-    "@altv/types": "^1.0.19",
-    "@types/node": "^13.13.2",
-    "copyfiles": "^2.2.0",
-    "typescript": "^3.8.3"
+    "@altv/types-client": "^1.1.0",
+    "@altv/types-natives": "^1.1.0",
+    "@altv/types-server": "^1.2.0",
+    "@altv/types-webview": "^1.0.2",
+    "@types/node": "^13.13.12",
+    "cpx": "^1.5.0",
+    "typescript": "^3.9.5"
   }
 }
