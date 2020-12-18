@@ -19,8 +19,8 @@ const app = new Vue({
       },
       isTransmitting: false,
       transmitColor: "#1a1a1a",
-      isReciving: false,
-      reciveColor: "#1a1a1a",
+      isReceiving: false,
+      receiveColor: "#1a1a1a",
       menu: {
         active: false,
         index: -1,
@@ -96,8 +96,8 @@ const app = new Vue({
         this.frequency = 0;
         this.isTransmitting = false;
         this.transmitColor = this.color.regular;
-        this.isReciving = false;
-        this.reciveColor = this.color.regular;
+        this.isReceiving = false;
+        this.receiveColor = this.color.regular;
         this.menu.active = false;
         this.menu.index = -1;
         alt.emit("webView::radio::powerStatusChanged", false);
@@ -133,7 +133,7 @@ const app = new Vue({
     },
     repeatNoise() {
       const buffer = 0.44;
-      if (this.isTransmitting || this.isReciving)
+      if (this.isTransmitting || this.isReceiving)
         if (this.noise.currentTime > this.noise.duration - buffer) {
           this.noise.currentTime = 0;
           this.noise.play();
@@ -162,16 +162,16 @@ const app = new Vue({
       new Audio("./audio/transmission_end.mp3").play();
       if ("alt" in window) alt.emit("webView::radio::transmissionEnded");
     },
-    reciveTransmissionStart() {
-      this.isReciving = true;
-      this.reciveColor = this.color.white;
+    receiveTransmissionStart() {
+      this.isReceiving = true;
+      this.receiveColor = this.color.white;
       this.frequencyColor = this.color.white;
       this.subColor = this.color.white;
       this.playNoise();
     },
-    reciveTransmissionEnd() {
-      this.isReciving = false;
-      this.reciveColor = this.color.regular;
+    receiveTransmissionEnd() {
+      this.isReceiving = false;
+      this.receiveColor = this.color.regular;
       this.frequencyColor = this.color.regular;
       this.subColor = this.color.regular;
       if (this.noise) {
@@ -193,12 +193,12 @@ const app = new Vue({
       alt.on("webView::radio::startTransmission", self.startTransmission);
       alt.on("webView::radio::endTransmission", self.endTransmission);
       alt.on(
-        "webView::radio::reciveTransmissionStart",
-        self.reciveTransmissionStart
+        "webView::radio::receiveTransmissionStart",
+        self.receiveTransmissionStart
       );
       alt.on(
-        "webView::radio::reciveTransmissionEnd",
-        self.reciveTransmissionEnd
+        "webView::radio::receiveTransmissionEnd",
+        self.receiveTransmissionEnd
       );
     });
   },

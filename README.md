@@ -7,7 +7,7 @@
     - [Layout](#layout)
     - [Power on -/ off](#power-on---off)
     - [Channels & Sub Channels](#channels--sub-channels)
-    - [Transmit & Recieve](#transmit--recieve)
+    - [Transmit & Receive](#transmit--receive)
     - [Hotkeys](#hotkeys)
       - [QWERTZ](#qwertz)
       - [QWERTY](#qwerty)
@@ -65,7 +65,7 @@ You can increase & decrease the Value with the Icons `+` and `-` <br>
 <img style="padding: 5px;" src="./preview/HT-Channel.png" alt="HT-Channel" width="150"/><br>
 <br>
 
-### Transmit & Recieve
+### Transmit & Receive
 
 **Tx** => Transmitting<br>
 **Rx** => Revieving<br>

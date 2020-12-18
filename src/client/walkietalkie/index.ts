@@ -3,7 +3,7 @@ import * as natives from "natives";
 let radioView: alt.WebView;
 let player: alt.Player = alt.Player.local;
 
-let isRadioTunredOn = false;
+let isRadioTurnedOn = false;
 let isChannelSet = false;
 
 /**
@@ -18,7 +18,7 @@ alt.on("connectionComplete", () => {
 
   /**
    * WebView call,
-   * notifycation when DOM has finished loading
+   * notification when DOM has finished loading
    */
   radioView.on("webview::radio:finishedLoading", () => {
     radioView.unfocus();
@@ -30,7 +30,7 @@ alt.on("connectionComplete", () => {
    * @param {boolean} tunedOn - Current state
    */
   radioView.on("webView::radio::powerStatusChanged", (tunedOn: boolean) => {
-    isRadioTunredOn = tunedOn;
+    isRadioTurnedOn = tunedOn;
   });
 
   /**
@@ -53,7 +53,7 @@ alt.on("connectionComplete", () => {
 
   /**
    * WebView call,
-   * firend when the user is starting a transmission
+   * fired when the user is starting a transmission
    */
   radioView.on("webView::radio::transmissionStarted", () => {
     alt.emitServer("client::radio::transmissionStarted");
@@ -61,7 +61,7 @@ alt.on("connectionComplete", () => {
 
   /**
    * WebView call,
-   * firend when the user stopped the current transmission
+   * fired when the user stopped the current transmission
    */
   radioView.on("webView::radio::transmissionEnded", () => {
     alt.emitServer("client::radio::transmissionEnded");
@@ -69,7 +69,7 @@ alt.on("connectionComplete", () => {
 
   /**
    * WebView call,
-   * firend when the user shows/hides the walkie talkie
+   * fired when the user shows/hides the walkie talkie
    */
   radioView.on("webView::radio::setFocus", (focus: boolean) => {
     if (focus) radioView.focus();
@@ -83,16 +83,16 @@ alt.on("connectionComplete", () => {
  * Serverside call,
  * server info when a foreign transmission started
  */
-alt.onServer("server::radio::reciveTransmissionStart", () => {
-  radioView.emit("webView::radio::reciveTransmissionStart");
+alt.onServer("server::radio::receiveTransmissionStart", () => {
+  radioView.emit("webView::radio::receiveTransmissionStart");
 });
 
 /**
  * Serverside call,
  * server info when a foreign transmission ended
  */
-alt.onServer("server::radio::reciveTransmissionEnd", () => {
-  radioView.emit("webView::radio::reciveTransmissionEnd");
+alt.onServer("server::radio::receiveTransmissionEnd", () => {
+  radioView.emit("webView::radio::receiveTransmissionEnd");
 });
 
 /**
@@ -145,7 +145,7 @@ alt.on("keyup", (key: number) => {
  */
 alt.on("keydown", (key: number) => {
   if (key !== 220) return;
-  if (!isRadioTunredOn) return;
+  if (!isRadioTurnedOn) return;
   if (!isChannelSet) return;
   natives.taskPlayAnim(
     player.scriptID,
@@ -172,7 +172,7 @@ alt.on("keydown", (key: number) => {
  */
 alt.on("keyup", (key: number) => {
   if (key !== 220) return;
-  if (!isRadioTunredOn) return;
+  if (!isRadioTurnedOn) return;
   if (!isChannelSet) return;
   natives.clearPedTasks(player.scriptID);
   radioView.emit("webView::radio::endTransmission");

@@ -90,7 +90,7 @@ alt.onClient("client::radio::transmissionStarted", (player: alt.Player) => {
   alt.Player.all.forEach((loopedPlayer: alt.Player) => {
     if (loopedPlayer == player) return;
     if (loopedPlayer.getMeta("voiceChannel") != voiceChannel) return;
-    alt.emitClient(loopedPlayer, "server::radio::reciveTransmissionStart");
+    alt.emitClient(loopedPlayer, "server::radio::receiveTransmissionStart");
   });
 });
 
@@ -105,6 +105,6 @@ alt.onClient("client::radio::transmissionEnded", (player: alt.Player) => {
   alt.Player.all.forEach((loopedPlayer: alt.Player) => {
     if (loopedPlayer == player) return;
     if (loopedPlayer.getMeta("voiceChannel") != voiceChannel) return;
-    alt.emitClient(loopedPlayer, "server::radio::reciveTransmissionEnd");
+    alt.emitClient(loopedPlayer, "server::radio::receiveTransmissionEnd");
   });
 });
