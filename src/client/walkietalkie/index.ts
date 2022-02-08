@@ -1,17 +1,18 @@
-import * as alt from "alt-client";
-import * as natives from "natives";
-let radioView: alt.WebView;
-let player: alt.Player = alt.Player.local;
+import {emitServer, on, onServer, Player, showCursor, toggleGameControls, WebView, setTimeout} from 'alt-client';
+import {clearPedTasks, freezeEntityPosition, requestAnimDict, taskPlayAnim} from 'natives';
+
+let radioView: WebView;
+let player: Player = Player.local;
 
 let isRadioTurnedOn = false;
 let isChannelSet = false;
 
 /**
  * Clientside/alt:V internal call,
- * called when clienthandshake is complete
+ * called when client handshake is complete
  */
-alt.on("connectionComplete", () => {
-  radioView = new alt.WebView(
+on("connectionComplete", () => {
+  radioView = new WebView(
     "http://resource/client/walkietalkie/html/index.html"
   );
   radioView.focus();
@@ -43,7 +44,7 @@ alt.on("connectionComplete", () => {
     "webView::radio::onChannelChange",
     (channel: number, subChannel: number) => {
       isChannelSet = true;
-      alt.emitServer("client::radio::onChannelChange", channel, subChannel);
+      emitServer("client::radio::onChannelChange", channel, subChannel);
     }
   );
 
@@ -56,7 +57,7 @@ alt.on("connectionComplete", () => {
    * fired when the user is starting a transmission
    */
   radioView.on("webView::radio::transmissionStarted", () => {
-    alt.emitServer("client::radio::transmissionStarted");
+    emitServer("client::radio::transmissionStarted");
   });
 
   /**
@@ -64,7 +65,7 @@ alt.on("connectionComplete", () => {
    * fired when the user stopped the current transmission
    */
   radioView.on("webView::radio::transmissionEnded", () => {
-    alt.emitServer("client::radio::transmissionEnded");
+    emitServer("client::radio::transmissionEnded");
   });
 
   /**
@@ -76,14 +77,14 @@ alt.on("connectionComplete", () => {
     else radioView.unfocus();
   });
 
-  natives.requestAnimDict("random@arrests");
+  requestAnimDict("random@arrests");
 });
 
 /**
  * Serverside call,
  * server info when a foreign transmission started
  */
-alt.onServer("server::radio::receiveTransmissionStart", () => {
+onServer("server::radio::receiveTransmissionStart", () => {
   radioView.emit("webView::radio::receiveTransmissionStart");
 });
 
@@ -91,17 +92,17 @@ alt.onServer("server::radio::receiveTransmissionStart", () => {
  * Serverside call,
  * server info when a foreign transmission ended
  */
-alt.onServer("server::radio::receiveTransmissionEnd", () => {
+onServer("server::radio::receiveTransmissionEnd", () => {
   radioView.emit("webView::radio::receiveTransmissionEnd");
 });
 
 /**
  * Clientside/alt:V internal call,
  * when player disconnects (quits on purpose or game crashes)
- * @param {alt.Player} player - Handle to the calling player
+ * @param {Player} player - Handle to the calling player
  */
-alt.on("disconnect", (player: alt.Player) => {
-  alt.emitServer("client::radio:removePlayer");
+on("disconnect", (player: Player) => {
+  emitServer("client::radio:removePlayer");
 });
 
 /**
@@ -109,7 +110,7 @@ alt.on("disconnect", (player: alt.Player) => {
  * when the player is pressing down "Numpad +", this event is fired
  * @param {number} key - ID of the key
  */
-alt.on("keydown", (key: number) => {
+on("keydown", (key: number) => {
   if (key !== 107) return;
   radioView.emit("webView::radio::toggleRadioDisplay");
 });
@@ -119,11 +120,11 @@ alt.on("keydown", (key: number) => {
  * when the player is pressing down "CTRL", this event is fired
  * @param {number} key - ID of the key
  */
-alt.on("keydown", (key: number) => {
+on("keydown", (key: number) => {
   if (key !== 17) return;
-  alt.showCursor(true);
-  natives.freezeEntityPosition(player.scriptID, true);
-  alt.toggleGameControls(false);
+  showCursor(true);
+  freezeEntityPosition(player.scriptID, true);
+  toggleGameControls(false);
 });
 
 /**
@@ -131,11 +132,11 @@ alt.on("keydown", (key: number) => {
  * when the player is pressing up "CTRL", this event is fired
  * @param {number} key - ID of the key
  */
-alt.on("keyup", (key: number) => {
+on("keyup", (key: number) => {
   if (key !== 17) return;
-  alt.showCursor(false);
-  natives.freezeEntityPosition(alt.Player.local.scriptID, false);
-  alt.toggleGameControls(true);
+  showCursor(false);
+  freezeEntityPosition(Player.local.scriptID, false);
+  toggleGameControls(true);
 });
 
 /**
@@ -143,11 +144,11 @@ alt.on("keyup", (key: number) => {
  * when the player is pressing down "Tilde", this event is fired
  * @param {number} key - ID of the key
  */
-alt.on("keydown", (key: number) => {
+on("keydown", (key: number) => {
   if (key !== 220) return;
   if (!isRadioTurnedOn) return;
   if (!isChannelSet) return;
-  natives.taskPlayAnim(
+  taskPlayAnim(
     player.scriptID,
     "random@arrests",
     "generic_radio_chatter",
@@ -160,7 +161,7 @@ alt.on("keydown", (key: number) => {
     false,
     false
   );
-  alt.setTimeout(() => {
+  setTimeout(() => {
     radioView.emit("webView::radio::startTransmission");
   }, 250);
 });
@@ -170,10 +171,10 @@ alt.on("keydown", (key: number) => {
  * when the player is pressing down "Tilde", this event is fired
  * @param {number} key - ID of the key
  */
-alt.on("keyup", (key: number) => {
+on("keyup", (key: number) => {
   if (key !== 220) return;
   if (!isRadioTurnedOn) return;
   if (!isChannelSet) return;
-  natives.clearPedTasks(player.scriptID);
+  clearPedTasks(player.scriptID);
   radioView.emit("webView::radio::endTransmission");
 });
