@@ -27,11 +27,11 @@
   },
   "homepage": "https://github.com/AltV-Projects/TypeScript-Boilerplate#readme",
   "devDependencies": {
-    "@altv/types-client": "^1.1.0",
-    "@altv/types-natives": "^1.1.0",
-    "@altv/types-server": "^1.2.0",
+    "@altv/types-client": "^2.0.9",
+    "@altv/types-natives": "^1.4.4",
+    "@altv/types-server": "^2.2.5",
     "@altv/types-webview": "^1.0.2",
-    "@types/node": "^13.13.12",
+    "@types/node": "^17.0.16",
     "cpx": "^1.5.0",
     "typescript": "^3.9.5"
   }
